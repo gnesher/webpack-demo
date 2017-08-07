@@ -1,3 +1,5 @@
+import "./app.css";
+
 class Rectangle {
   constructor(height, width) {
     this.height = height;
