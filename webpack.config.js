@@ -10,6 +10,14 @@ const config = {
         publicPath: '/assets/',
         filename: 'bundle.js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader'
+            }
+        ],
+    },
     devServer: {
         contentBase: __dirname + '/src',
     }

@@ -1,5 +1,19 @@
-var arr = [1,2,3,4,5];
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+  
+  get area() {
+    return this.calcArea();
+  }
 
-for(var i = 0; i < arr.length; i++ ) {
-    console.log(arr[i]);
+  calcArea() {
+    return this.height * this.width;
+  }
 }
+
+const square = new Rectangle(10, 10);
+
+console.log(square.area);
+// example taken from MDN
