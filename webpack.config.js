@@ -8,7 +8,10 @@ const config = {
     output: {
         path: __dirname + '/dist',
         publicPath: '/assets/',
-        filename: '[name].bundle.js'
+        filename: 'bundle.js'
+    },
+    devServer: {
+        contentBase: __dirname + '/src',
     }
 }
 
